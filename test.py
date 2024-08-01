@@ -13,6 +13,8 @@
 #
 # print(persistence(999))
 # ----------------------------------------------------------------------------------------------------------------------
+from functools import reduce
+
 
 # Automatons, or Finite State Machines (FSM), are extremely useful to programmers when it comes to software design.
 # You will be given a simplistic version of an FSM to code for a basic TCP session.
@@ -139,14 +141,30 @@
 #
 # print(gimme([2, 3, 1]))
 # ----------------------------------------------------------
+# Your task is to write a function which returns the sum of a sequence of integers.
+# The sequence is defined by 3 non-negative values: begin, end, step.
+# If begin value is greater than the end, your function should return 0.
+# If end is not the result of an integer number of steps, then don't add it to the sum. See the 4th example below.
+#
+# Examples
+# 2,2,2 --> 2
+# 2,6,2 --> 12 (2 + 4 + 6)
+# 1,5,1 --> 15 (1 + 2 + 3 + 4 + 5)
+# 1,5,3  --> 5 (1 + 4)
 
-
-
-
-
-
-
-
+# def sequence_sum(begin_number, end_number, step):
+#     if begin_number > end_number:
+#         return 0
+#
+#     lst = [i for i in range(begin_number, end_number + 1)]
+#
+#     summ = 0
+#     for i in lst[0::step]:
+#         summ += i
+#
+#     return summ
+#
+# print(sequence_sum(2, 2, 2)) #12
 
 
 
