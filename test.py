@@ -386,13 +386,21 @@
 
 # ----------------------------------------------------------------------------------------------------------
 
+# Given a Divisor and a Bound , Find the largest integer N , Such That ,
+# Conditions :
+#
+# N is divisible by divisor
+# N is less than or equal to bound
+# N is greater than 0.
 
+# divisor = 2, bound = 7 ==> return (6)
+# Explanation:
+# (6) is divisible by (2) , (6) is less than or equal to bound (7) , and (6) is > 0 .
 
-
-
-
-
-
+# def max_multiple(divisor, bound):
+#     return bound // divisor * divisor
+#
+# print(max_multiple(3,10)) #, 9
 
 
 
