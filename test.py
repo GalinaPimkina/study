@@ -362,13 +362,29 @@
 #
 # print(sum_digits(-32))# 5
 
+# ---------------------------------------------------
+# in this Kata, you will be given a string that may have mixed uppercase and lowercase letters
+# and your task is to convert that string to either lowercase only or uppercase only based on:
+#
+# - make as few changes as possible.
+# - if the string contains equal number of uppercase and lowercase letters, convert the string to lowercase.
 
+# def solve(s):
+#     count_UPPER = 0
+#     count_lower = 0
+#
+#     for i in s:
+#         if i == i.upper():
+#             count_UPPER += 1
+#         else:
+#             count_lower += 1
+#
+#     return s.lower() if count_lower >= count_UPPER else s.upper()
+#
+#
+# print(solve("COde")) #code
 
-
-
-
-
-
+# ----------------------------------------------------------------------------------------------------------
 
 
 
