@@ -3,7 +3,7 @@
 # digits in num until you reach a single digit.
 # For example (Input --> Output):
 # 39 --> 3 (because 3*9 = 27, 2*7 = 14, 1*4 = 4 and 4 has only one digit, there are 3 multiplications)
-# ----------------------------------------------------------------------------------------------------------------------
+
 # from functools import reduce
 # from operator import mul
 #
@@ -13,9 +13,6 @@
 #
 # print(persistence(999))
 # ----------------------------------------------------------------------------------------------------------------------
-from functools import reduce
-
-
 # Automatons, or Finite State Machines (FSM), are extremely useful to programmers when it comes to software design.
 # You will be given a simplistic version of an FSM to code for a basic TCP session.
 # The outcome of this exercise will be to return the correct state of the TCP FSM based on the array of events given.
@@ -55,7 +52,8 @@ from functools import reduce
 # ["APP_PASSIVE_OPEN", "APP_SEND", "RCV_SYN_ACK"] =>  "ESTABLISHED"
 # ["APP_ACTIVE_OPEN"] =>  "SYN_SENT"
 # ["APP_ACTIVE_OPEN", "RCV_SYN_ACK", "APP_CLOSE", "RCV_FIN_ACK", "RCV_ACK"] =>  "ERROR"
-# ---------------------------------------------------------------------------------------
+
+
 # initial_dict = {
 #     "CLOSED": {
 #         "APP_PASSIVE_OPEN": "LISTEN",
@@ -354,15 +352,15 @@ from functools import reduce
 #
 # print(check_exam(["a", "a", "c", "b"], ["a", "a", "b",  ""])) #7
 # -------------------------------------------------------------------------------------------------
+#
+# Write a function named sumDigits which takes a number as input and
+# returns the sum of the absolute value of each of the number's decimal digits.
 
-
-
-
-
-
-
-
-
+# def sum_digits(number):
+#     return sum([int(i) for i in str(abs(number))])
+#
+#
+# print(sum_digits(-32))# 5
 
 
 
